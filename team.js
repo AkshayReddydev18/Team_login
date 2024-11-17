@@ -1,16 +1,15 @@
-document.getElementById('loginForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent form submission
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const teamID = document.getElementById('teamID').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+  const teamID = document.getElementById("teamID").value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-    // Simple validation
-    if (!teamID || !email || !password) {
-        alert('Please fill in all fields');
-        return;
-    }
+  if (!teamID || !email || !password) {
+    alert("Please fill in all fields");
+    return;
+  }
 
-    alert(`Welcome to the team, ${teamID}!`);
-    // Implement authentication logic here
+  alert(`Welcome to the team, ${name}!`);
 });
